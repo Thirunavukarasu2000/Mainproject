@@ -33,7 +33,7 @@ public class BaseClass
 	}
 	@Parameters("browser")
 	@BeforeClass(alwaysRun=true)
-	public void launchBrowser(@Optional("edge")String BROWSER) throws IOException
+	public void launchBrowser(@Optional("chrome")String BROWSER) throws IOException
 	{
 //		driver = new ChromeDriver();
 		if(BROWSER.equals("chrome"))
